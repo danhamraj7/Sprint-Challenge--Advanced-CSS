@@ -1,1 +1,35 @@
 // Navigation code here
+.navDiv {
+    border: 2px solid @nav-border;
+    background: @nav-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: @river-bend;
+
+    .heading {
+        font-family: 'Russo One', sans-serif;
+        font-size: 4rem;
+        margin-bottom: 7px;
+        margin-top: 5px;
+
+    }
+
+    nav {
+        margin-bottom: 1%;
+    }
+
+    a {
+        padding-right: 20px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        font-size: 2rem;
+        color: @nav-font;
+    }
+
+    @media @phone {
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
