@@ -1,1 +1,38 @@
 // Mixins Here
+.align {
+    margin-left: 1%;
+    font-size: 1.8rem;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity {
+    opacity: 7;
+}
+
+
+.custom-btn(@bgcolor: #22283A, @width: 100px, @font-color: white) {
+    display: block;
+    background-color: @bgcolor;
+    margin: 0 10px 20px 0;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: @font-color;
+
+    @media @phone {
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: @font-color;
+        color: @bgcolor;
+    }
+
+}
